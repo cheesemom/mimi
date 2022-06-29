@@ -143,12 +143,16 @@
 
 /* 2page */
 
+.main_visual02 {
+    background: #f1f1f1;
+    padding: 100px 0;
+}
 
 .main_visual02 h2 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
-    margin-top: 120px;
+    margin-bottom: 10px;
 }
 
 .main_visual02 p {
@@ -196,19 +200,18 @@
 
 /* 3page */
 
+.main_visual03 {
+    position: relative;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
 
 .main_visual03 h1 {
     font-size: 40px;
     font-weight: 300;
     text-align: center;
-    padding: 110px 0 70px 0;
+    padding: 0 0 70px 0;
     line-height: 1;
-}
-
-.main_visual03 {
-    position: relative;
-    box-sizing: border-box;
-    background: url(../img/bg-field.png) no-repeat center center/cover;
 }
 
 .main_visual03 .slider_wrap {
@@ -222,7 +225,6 @@
 .slider_wrap figure {
     position: relative;
     height: 500px;
-    margin-bottom: 100px;
     margin: 0 auto;
 }
 
@@ -241,10 +243,6 @@
 .main_visual03 .slider_wrap .image04 {
     background: url(../img/bg04.png) no-repeat center center/cover;
 }
-
-
-
-
 
 .main_visual03 .slider_wrap .inner {
     position: absolute;
@@ -322,7 +320,6 @@
     background: url(../img/big-03.png) no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
-
 }
 
 .main_visual04 h2 {
@@ -345,8 +342,11 @@
 
 .main_visual04 em {
     line-height: 48px;
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #ababab;
     padding-left: 1600px;
 }
 
@@ -359,40 +359,25 @@
 
 #footer {
     background: #333;
-    color: #fff;
-    line-height: 70px;
+    color: #ababab;
+    padding: 80px 100px 80px
 }
 
 #footer .container {
+    justify-content: space-between;
     color: #ababab;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 100;
 }
 
 #footer .top {
-    padding-top: 60px;
     line-height: 30px;
-    font-size: 11px;
-    font-weight: 100;
-    padding-left: 50px;
-    float: left;
+    padding-bottom: 60px;
 }
 
-#footer .bottom {
-    margin-bottom: 8px;
-}
-
-#footer .bottom p {
-    font-size: 11px;
-    font-weight: 100;
+#footer .bottom .left {
     line-height: 30px;
-    padding-bottom: 50px;
-    padding-top: 80px;
     margin: 0;
-}
-
-#footer .bottom .family_link {
-    color: #ababab;
 }
 
 #footer .bottom select {
@@ -400,22 +385,15 @@
     font-size: 14px;
     text-transform: uppercase;
     background: transparent;
-    color: #ddd;
+    color: #ababab;
     padding: 15px 10px;
-    opacity: 0.7;
     border: none;
     border-bottom: 1px solid #ababab;
     background: none;
-    float: right;
 }
 
-
-
-
-
-
 #footer .bottom option {
-    color: #fff;
+    color: #ababab;
     background: #333;
 }
 
@@ -427,16 +405,7 @@
 .toTop i {
     padding: 10px;
     background: transparent;
-    color: #fff;
-    font-size: 20px;
+    color: #ababab;
+    font-size: 25px;
     cursor: pointer;
-}
-
-
-
-.sticky {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow: hidden;
 }
