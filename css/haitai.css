@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    line-height: 100px;
+}
+
+.header .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header nav {
+    margin: 0 auto;
+}
+
+.header nav>ul {
+    display: flex;
+    gap: 50px;
+    font-size: 15px;
+}
+
+.header .service {
+    display: flex;
+    gap: 20px;
+    font-size: 11px;
+}
+
+.header .service_tab {
+    display: flex;
+    gap: 20px;
+    font-size: 11px;
+}
+
+#searchForm input[type="text"] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ababab;
+    padding: 5px 0;
+}
+
+#searchForm button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 13px;
+}

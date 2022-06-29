@@ -145,7 +145,8 @@
 
 .main_visual02 {
     background: #f1f1f1;
-    padding: 100px 0;
+    padding: 200px 0;
+    padding-bottom: 120px;
 }
 
 .main_visual02 h2 {
@@ -166,7 +167,7 @@
 .main_visual02 .item01 {
     display: flex;
     gap: 20px;
-    width: 1500px;
+    width: 1200px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -179,7 +180,6 @@
 .image {
     position: relative;
     margin: 0 auto;
-
 }
 
 .image:hover .aa-1 {
@@ -203,7 +203,8 @@
 .main_visual03 {
     position: relative;
     box-sizing: border-box;
-    padding: 100px 0;
+    padding: 200px 0;
+    padding-bottom: 200px;
 }
 
 .main_visual03 h1 {
@@ -378,6 +379,7 @@
 #footer .bottom .left {
     line-height: 30px;
     margin: 0;
+    font-style: normal;
 }
 
 #footer .bottom select {
