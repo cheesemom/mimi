@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    overflow-x: hidden;
+}
+
+.top_banner {
+    border-bottom: 1px solid #ddd;
+    font-size: 9px;
+    line-height: 35px;
+}
+
+.top_banner .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    line-height: 100px;
+}
+
+.header .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 img {
+    display: block;
+    padding: 9px;
+    width: 120px;
+    margin: 30px 0 0 10px;
+}
+
+.main_01 figure {
+    display: flex;
+    width: 2000px;
+    margin: 0 auto;
+}
+
+.header nav>ul {
+    display: flex;
+    gap: 45px;
+    left: 50%;
+    transform: translate(20%);
+}
+
+.header nav>ul a {
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.header nav>ul>li {
+    position: relative;
+}
+
+.header nav>ul>li:hover {
+    background: #fff;
+    color: gray;
+}
+
+.name h2 {
+    margin-top: 120px;
+    margin-bottom: 54px;
+    line-height: 48px;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main_visual01 .item01 {
+    display: flex;
+    gap: 30px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.main_visual01 img {
+    border-radius: 10% 10% 10% 10%;
+}
+
+.main_visual01 strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: darkslategray;
+    margin: 20px 0 0 0;
+}
+
+.main_visual01 p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2.5;
+}
+
+.main_02 figure {
+    display: flex;
+    width: 2000px;
+    margin-top: 120px;
+}
+
+.name h3 {
+    margin-top: 120px;
+    margin-bottom: 54px;
+    line-height: 48px;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main_visual02 .item02 {
+    display: flex;
+    gap: 30px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.main_visual02 img {
+    border-radius: 10% 10% 10% 10%;
+}
+
+.main_visual02 strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: darkslategray;
+    margin: 20px 0 0 0;
+}
+
+.main_visual02 p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2.5;
+}
+
+.main_03 figure {
+    display: flex;
+    width: 2000px;
+    margin-top: 120px;
+}
+
+.name h4 {
+    margin-top: 120px;
+    margin-bottom: 54px;
+    line-height: 48px;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+}
