@@ -71,6 +71,10 @@ body {
     text-align: center;
 }
 
+.main_visual01 {
+    position: relative;
+}
+
 .main_visual01 .item01 {
     display: flex;
     gap: 30px;
