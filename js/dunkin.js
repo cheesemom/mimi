@@ -22,7 +22,12 @@ $(function () {
     });
 
 
-
+    // $('.mov').YTPlayer({
+    //     videoURL: 'https://youtu.be/q1uhxDhfY4o',
+    //     autoPlay: true,
+    //     mute: true,
+    //     playOnlyIfVisible: true,
+    // });
 
 
 
