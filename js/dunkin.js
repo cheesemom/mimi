@@ -30,6 +30,13 @@ $(function () {
     // });
 
 
+    $('.main_visual04 .productArrows i:nth-child(1)').on('click', function () {
+        $('.productSlider').slick('slickPrev')
+    });
+
+    $('.main_visual04 .productArrows i:nth-child(2)').on('click', function () {
+        $('.productSlider').slick('slickNext')
+    });
 
 
 
