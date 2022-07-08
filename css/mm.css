@@ -4,7 +4,7 @@ body {
     height: 600vh;
     width: 100vw;
     font-family: "Nunito", sans-serif;
-    background-color: #e34f37;
+    background-color: lavender;
     color: white;
 }
 
@@ -46,24 +46,6 @@ img {
     cursor: pointer;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.header img {
-    width: 40vw;
-    height: 40vw;
-    max-height: 350px;
-    max-width: 350px;
-}
 
 /* SCROLL DOWN */
 .scroll-down {

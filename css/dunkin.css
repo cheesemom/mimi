@@ -115,6 +115,13 @@
     display: none;
 }
 
+.mainArrow i {
+    position: absolute;
+    font-size: 30px;
+    inset: 30% 0 0 30%;
+    transform: translate(-50% -50%);
+}
+
 
 
 
@@ -179,7 +186,6 @@
     padding: 8px 18px 8px 18px;
     margin-bottom: 100px;
 }
-
 
 
 
@@ -289,7 +295,6 @@
     color: #ab9b7f;
     padding: 8px 18px 8px 18px;
 }
-
 
 .main_visual04 .all_menu a {
     display: inline-block;
