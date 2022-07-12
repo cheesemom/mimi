@@ -1,0 +1,177 @@
+/* header */
+
+
+.header {
+    line-height: 100px;
+}
+
+.header .container {
+    width: 1800px;
+    margin: 0 auto;
+}
+
+.header h1 img {
+    width: 220px;
+}
+
+.header .container nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container .menu_1,
+.header .container .menu_2 {
+    display: flex;
+    gap: 40px;
+    font-size: 13px;
+}
+
+#searchForm {
+    display: flex;
+    font-size: 11px;
+}
+
+#searchForm input[type="text"] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ababab;
+    padding: 5px 0;
+}
+
+#searchForm button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+
+
+
+
+/* 1page */
+
+
+.swiper {
+    width: 1800px;
+    height: 800px;
+}
+
+
+
+
+
+/* 2page */
+
+
+.main_visual02 {
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_visual02 h2 {
+    display: inline-block;
+    font-size: 12px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    padding: 15px 25px 15px 25px;
+}
+
+.main_visual02 .main01 {
+    display: flex;
+    width: 1200px;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.main_visual02 .main01 img {
+    width: 1200px;
+    height: 400px;
+}
+
+.main_visual02 figure .box {
+    overflow: hidden;
+}
+
+.main_visual02 figure img {
+    width: 1200px;
+    height: 400px;
+    transition: 1s;
+}
+
+.main_visual02 figure:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+
+/* 3page */
+
+
+.main_visual03 {
+    position: relative;
+    height: 450px;
+    background: url(../img/UR_c1.jpg) 50%;
+    background-attachment: fixed;
+}
+
+.main_visual03 .main02 {
+    text-align: center;
+    text-shadow: 1px 1px 2px #333;
+    color: #fff;
+}
+
+.main_visual03 h2 {
+    position: absolute;
+    font-size: 40px;
+    left: 31%;
+    top: 40%;
+}
+
+.main_visual03 p {
+    position: absolute;
+    font-size: 20px;
+    left: 33%;
+    top: 52%;
+    text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+}
+
+
+
+
+
+/* 4page */
+
+
+.main_visual04 {
+    display: flex;
+    width: 1800px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+video {
+    padding: 100px 0;
+    width: 1500px;
+    height: 800px;
+}
+
+
+
+
+
+
+
+
+.main_visual04 .box_title {
+    font-size: 16px;
+    color: #ababab;
+    line-height: 2;
+    border-bottom: 2px solid skyblue;
+}
