@@ -10,8 +10,8 @@ $(function () {
             el: '.swiper-pagination',
             clickable: true,
         },
-
     });
+
 
 
 })

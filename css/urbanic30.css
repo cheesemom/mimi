@@ -26,6 +26,15 @@
     font-size: 13px;
 }
 
+.header nav>ul>li {
+    position: relative;
+}
+
+.header nav>ul>li:hover {
+    background: #fff;
+    color: skyblue;
+}
+
 #searchForm {
     display: flex;
     font-size: 11px;
@@ -43,6 +52,7 @@
     outline: none;
     border: none;
     font-size: 15px;
+    cursor: pointer;
 }
 
 
@@ -70,7 +80,7 @@
     text-align: center;
 }
 
-.main_visual02 h2 {
+.main_visual02 h1 {
     display: inline-block;
     font-size: 12px;
     border: 2px solid skyblue;
@@ -96,9 +106,7 @@
 }
 
 .main_visual02 figure img {
-    width: 1200px;
-    height: 400px;
-    transition: 1s;
+    transition: 1s ease;
 }
 
 .main_visual02 figure:hover img {
@@ -139,7 +147,6 @@
     top: 52%;
     text-decoration: underline;
     text-underline-position: under;
-    cursor: pointer;
 }
 
 
@@ -151,26 +158,63 @@
 
 .main_visual04 {
     display: flex;
-    width: 1800px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 200px 0;
 }
 
-video {
-    padding: 100px 0;
-    width: 1600px;
-    height: 800px;
+.main_visual04 .container {
+    display: flex;
+    gap: 100px;
+    margin: 0 auto;
 }
 
+.main_visual04 .left video {
+    height: 700px;
+}
 
+.main_visual04 .right {
+    height: 700px;
+    width: 700px;
+}
 
+.main_visual04 .right h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 85px;
+}
 
-
-.main_visual04 .box_title {
-    font-size: 16px;
+.main_visual04 .right p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
     color: #ababab;
+    line-height: 3;
+}
+
+.main_visual04 .right .main03 p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: grey;
     line-height: 2;
-    border-bottom: 2px solid skyblue;
+}
+
+.main_visual04 .right .main03 .txt01 {
+    padding-top: 50px;
+}
+
+.main_visual04 .right .main03 .txt02 {
+    padding-top: 20px;
+}
+
+.main_visual04 .right .main03 .txt03 {
+    padding-top: 20px;
+}
+
+.main_visual04 .right .main03 .txt04 {
+    padding-top: 20px;
 }
 
 
@@ -181,12 +225,11 @@ video {
 
 
 .main_visual05 {
-    padding: 100px 0;
     margin: 0 auto;
     text-align: center;
 }
 
-.main_visual05 h2 {
+.main_visual05 h1 {
     display: inline-block;
     font-size: 12px;
     border: 2px solid skyblue;
@@ -194,10 +237,70 @@ video {
     padding: 15px 25px 15px 25px;
 }
 
-.main_visual05 .main04 {
+.main_visual05 .prod_list {
     display: flex;
     width: 1600px;
     gap: 30px;
     margin: 0 auto;
     padding: 100px 0;
+}
+
+.prod_list li {
+    position: relative;
+}
+
+.prod_list li:hover .caption {
+    opacity: 1;
+    transform: translateY(-300px);
+}
+
+.prod_list .caption {
+    position: absolute;
+    top: 300px;
+    padding-top: 20px;
+    left: 15px;
+    transition: 1s ease;
+    opacity: 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: grey;
+}
+
+
+
+
+
+/* 6page */
+
+
+.main_visual06 {
+    position: relative;
+    height: 450px;
+    background: url(../img/UR_e1.jpg);
+    background-attachment: fixed;
+}
+
+
+
+
+
+/* footer */
+
+#footer .main06 {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    padding: 20px 0;
+}
+
+#footer {
+    padding: 100px 0;
+}
+
+#footer .logo {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
 }
