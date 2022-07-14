@@ -106,11 +106,11 @@
 }
 
 .main_visual02 figure img {
-    transition: 1s ease;
+    transition: 1.3s ease;
 }
 
 .main_visual02 figure:hover img {
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 
 
@@ -123,7 +123,7 @@
 .main_visual03 {
     position: relative;
     height: 450px;
-    background: url(../img/UR_c1.jpg) 50%;
+    background: url(../img/UR_c1.jpg);
     background-attachment: fixed;
 }
 
@@ -136,14 +136,14 @@
 .main_visual03 h2 {
     position: absolute;
     font-size: 40px;
-    left: 31%;
+    left: 23%;
     top: 40%;
 }
 
 .main_visual03 p {
     position: absolute;
     font-size: 20px;
-    left: 33%;
+    left: 25%;
     top: 52%;
     text-decoration: underline;
     text-underline-position: under;
@@ -180,9 +180,10 @@
 
 .main_visual04 .right h1 {
     text-align: center;
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 500;
     padding-top: 85px;
+    color: skyblue;
 }
 
 .main_visual04 .right p {
@@ -191,13 +192,14 @@
     font-weight: 300;
     color: #ababab;
     line-height: 3;
+    letter-spacing: 0.12rem;
 }
 
 .main_visual04 .right .main03 p {
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
-    color: grey;
+    color: #808080;
     line-height: 2;
 }
 
@@ -227,6 +229,8 @@
 .main_visual05 {
     margin: 0 auto;
     text-align: center;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 
 .main_visual05 h1 {
@@ -251,7 +255,7 @@
 
 .prod_list li:hover .caption {
     opacity: 1;
-    transform: translateY(-300px);
+    transform: translateY(-330px);
 }
 
 .prod_list .caption {
@@ -261,9 +265,18 @@
     left: 15px;
     transition: 1s ease;
     opacity: 0;
-    font-size: 13px;
-    font-weight: 300;
-    color: grey;
+    font-size: 11px;
+    color: #808080;
+    letter-spacing: 1px;
+}
+
+.prod_list img {
+    top: 30px;
+    transition: 1s ease;
+}
+
+.prod_list img:hover {
+    transform: translateY(-30px);
 }
 
 
@@ -274,11 +287,19 @@
 
 
 .main_visual06 {
-    position: relative;
-    height: 450px;
-    background: url(../img/UR_e1.jpg);
-    background-attachment: fixed;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
 }
+
+.main_visual06 h1 {
+    display: inline-block;
+    font-size: 12px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    padding: 15px 25px 15px 25px;
+}
+
 
 
 
@@ -286,21 +307,148 @@
 
 /* footer */
 
-#footer .main06 {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    border-left: 1px solid #777;
-    border-right: 1px solid #777;
-    padding: 20px 0;
-}
 
 #footer {
-    padding: 100px 0;
+    width: 1600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ababab;
+    border-top: 1px solid #ababab;
+    margin-bottom: 60px;
+}
+
+#footer .inner {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
 }
 
 #footer .logo {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    position: absolute;
+    width: 115px;
+    top: -55px;
+    left: 800px;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+#footer .logo img {
+    padding: 0 40px !important;
+}
+
+
+
+
+
+
+#footer .left .info {
+    padding-top: 30px;
+}
+
+#footer .left .info a {
+    font-size: 13px;
+    padding-right: 15px;
+}
+
+#footer .left .ceo {
+    font-size: 11px;
+    line-height: 2;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#footer .left .ceo span {
+    color: #808080;
+    font-weight: 300;
+}
+
+#footer .left .service {
+    padding-bottom: 30px;
+}
+
+#footer .left .service a {
+    font-size: 13px;
+    text-decoration: underline;
+    text-underline-position: under;
+    padding-right: 15px;
+}
+
+
+
+
+#footer .customer,
+#footer .head {
+    font-size: 13px;
+    line-height: 1;
+}
+
+#footer .right .info {
+    padding-top: 30px;
+}
+
+#footer .customer {
+    padding-bottom: 8px;
+}
+
+#footer .head {
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+#footer .tel,
+#footer .address {
+    font-size: 11px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+#footer .tel span,
+#footer .address span {
+    color: #808080;
+    font-weight: 300;
+}
+
+#footer .copyright {
+    font-size: 11px;
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+#footer .left {
+    float: left;
+}
+
+#footer .right {
+    float: right;
+}
+
+
+
+
+
+
+
+
+.Top {
+    position: fixed;
+    inset: auto 15px 20px auto;
+}
+
+.Top i {
+    padding: 10px 0 0 0;
+    background: transparent;
+    color: #ababab;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.Top i:hover {
+    color: skyblue;
 }
