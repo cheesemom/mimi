@@ -106,11 +106,13 @@
 }
 
 .main_visual02 figure img {
-    transition: 1.3s ease;
+    transition: 1.5s ease;
+    opacity: 0.8;
 }
 
 .main_visual02 figure:hover img {
-    transform: scale(0.9);
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 
@@ -136,14 +138,14 @@
 .main_visual03 h2 {
     position: absolute;
     font-size: 40px;
-    left: 23%;
+    left: 20%;
     top: 40%;
 }
 
 .main_visual03 p {
     position: absolute;
     font-size: 20px;
-    left: 25%;
+    left: 22%;
     top: 52%;
     text-decoration: underline;
     text-underline-position: under;
@@ -180,43 +182,16 @@
 
 .main_visual04 .right h1 {
     text-align: center;
-    font-size: 35px;
-    font-weight: 500;
-    padding-top: 85px;
-    color: skyblue;
+    padding-top: 90px;
 }
 
-.main_visual04 .right p {
+.main_visual04 .main03 {
     text-align: center;
     font-size: 13px;
     font-weight: 300;
-    color: #ababab;
-    line-height: 3;
-    letter-spacing: 0.12rem;
-}
-
-.main_visual04 .right .main03 p {
-    text-align: center;
-    font-size: 13px;
-    font-weight: 300;
+    letter-spacing: 0.5px;
     color: #808080;
     line-height: 2;
-}
-
-.main_visual04 .right .main03 .txt01 {
-    padding-top: 50px;
-}
-
-.main_visual04 .right .main03 .txt02 {
-    padding-top: 20px;
-}
-
-.main_visual04 .right .main03 .txt03 {
-    padding-top: 20px;
-}
-
-.main_visual04 .right .main03 .txt04 {
-    padding-top: 20px;
 }
 
 
@@ -230,7 +205,6 @@
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-    padding-bottom: 100px;
 }
 
 .main_visual05 h1 {
@@ -246,7 +220,11 @@
     width: 1600px;
     gap: 30px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 80px 0;
+}
+
+.main_visual05 .prod_list h2 {
+    line-height: 2;
 }
 
 .prod_list li {
@@ -261,11 +239,11 @@
 .prod_list .caption {
     position: absolute;
     top: 300px;
-    padding-top: 20px;
+    padding-top: 15px;
     left: 15px;
     transition: 1s ease;
     opacity: 0;
-    font-size: 11px;
+    font-size: 10px;
     color: #808080;
     letter-spacing: 1px;
 }
@@ -290,6 +268,7 @@
     padding: 100px 0;
     margin: 0 auto;
     text-align: center;
+
 }
 
 .main_visual06 h1 {
@@ -299,6 +278,14 @@
     border-radius: 5px;
     padding: 15px 25px 15px 25px;
 }
+
+.main_visual06 .main_slider {
+    display: flex;
+    margin: 0 auto;
+    width: 1600px;
+    padding: 80px 0;
+}
+
 
 
 
@@ -332,7 +319,7 @@
 }
 
 #footer .logo img {
-    padding: 0 40px !important;
+    padding: 0 40px;
 }
 
 
@@ -384,6 +371,7 @@
 
 #footer .right .info {
     padding-top: 30px;
+    padding-left: 550px;
 }
 
 #footer .customer {
@@ -413,9 +401,6 @@
     padding-top: 18px;
     padding-bottom: 30px;
 }
-
-
-
 
 
 
