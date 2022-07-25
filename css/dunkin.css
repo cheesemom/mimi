@@ -195,7 +195,7 @@
 .main_visual03 {
     position: relative;
     height: 400px;
-    background: url(../img/d_img_banner_1_1.jpg) 50%;
+    background: url(../img/dunkin/d_img_banner_1_1.jpg) 50%;
     background-attachment: fixed;
     text-align: center;
 
@@ -327,7 +327,7 @@
 .main_visual05 {
     position: relative;
     height: 400px;
-    background: url(../img/d_img_banner_1_2.jpg) 50%;
+    background: url(../img/dunkin/d_img_banner_1_2.jpg) 50%;
     background-attachment: fixed;
     text-align: center;
     padding: 100px 0;
