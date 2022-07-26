@@ -5,12 +5,12 @@
 }
 
 .header .container {
-    width: 1200px;
+    width: 1600px;
     margin: 0 auto;
 }
 
 .header h1 img {
-    width: 170px;
+    width: 180px;
 }
 
 .header .container nav {
@@ -20,14 +20,13 @@
 
 .header .container .menu01 {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     font-size: 13px;
     font-weight: 500;
 }
 
 .header .container .menu02 {
     display: flex;
-    gap: 20px;
     font-size: 17px;
 }
 
@@ -53,8 +52,8 @@
     border-radius: 6px;
     top: 70%;
     left: 50%;
-    margin-left: -99px;
-    animation: motion 0.6s linear infinite alternate;
+    margin-left: -100px;
+    animation: motion 1s linear infinite alternate;
 }
 
 @keyframes motion {
@@ -106,19 +105,21 @@ nav>ul>li ul {
     width: 150%;
     transform: translateX(-50%);
     background: #fff;
-    border: 3px solid pink;
+    border: 3px solid #de4434;
     opacity: 0;
+    text-align: center;
 }
 
 nav>ul>li:hover ul {
-    inset: 90px auto auto 50%;
+    inset: 80px auto auto 50%;
     opacity: 1;
     visibility: visible;
     transition: 0.5s;
 }
 
 nav>ul>li>ul>li:hover {
-    background: pink;
+    background: #de4434;
+    color: #fff;
     transition: 0.5s;
 }
 
@@ -128,23 +129,11 @@ nav>ul>li ul li {
 }
 
 
-nav>ul>li ul::before {
-    content: "";
-    position: absolute;
-    border: 3px solid pink;
-    background: #fff;
-}
-
-
 
 
 
 /* main */
 
-
-.main_visual img {
-    height: 800px;
-}
 
 .marquee_wrapper {
     display: block;
@@ -226,6 +215,7 @@ nav>ul>li ul::before {
     border-top: 1px solid #f4cac1;
     width: 1400px;
     margin: 0 auto;
+    padding-top: 30px;
 }
 
 .main_visual02 .new02 {
@@ -274,6 +264,24 @@ nav>ul>li ul::before {
     display: none;
 }
 
+.shop_all a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #de4434;
+    color: #fff;
+    border-radius: 15px;
+    padding: 14px 17px 14px 17px;
+    margin-top: 40px;
+    margin-left: 900px;
+}
+
+.shop_all a:hover {
+    background: #f4cac1;
+}
+
+
 
 
 
@@ -306,32 +314,33 @@ nav>ul>li ul::before {
 .star {
     text-align: center;
     margin-top: 15px;
+    color: #ffff00;
 }
 
 .content {
     font-size: 12px;
+    font-weight: 500;
     margin-top: 15px;
 }
 
 
-.main_visual03 a {
+.go_shop a {
     display: inline-block;
-    margin: 20px 0 0 0;
+    margin: 25px 0 0 0;
     font-size: 12px;
     font-weight: 500;
     border-radius: 5px;
     background-color: #de4434;
     color: #fff;
     border-radius: 15px;
-    padding: 9px 15px 9px 15px;
-    margin-left: 168px;
+    padding: 11px 13px 11px 13px;
+    margin-left: 165px;
 }
 
+.go_shop a:hover {
+    background: #f4cac1;
+}
 
-
-
-
-/* 4page */
 
 
 
@@ -340,14 +349,17 @@ nav>ul>li ul::before {
 
 
 #footer {
+    margin: 0 auto;
     background: #B7C5A1;
-    padding: 30px;
 }
 
 #footer .inner {
     font-size: 10px;
-    margin: 20px;
+    position: relative;
+    display: inline-block;
 }
+
+
 
 #footer .bottom {
     display: flex;
@@ -355,14 +367,47 @@ nav>ul>li ul::before {
     line-height: 3;
 }
 
+#footer .info {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+}
+
+#footer .left {
+    float: left;
+}
 
 
+
+#footer .right {
+    float: right;
+}
+
+#footer .service {
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+    padding-top: 40px;
+    padding-left: 790px;
+}
+
+#footer .service .icon01:hover {
+    color: #fff;
+}
+
+#footer .service .icon02:hover {
+    color: #fff;
+}
+
+#footer .service .icon03:hover {
+    color: #fff;
+}
 
 
 
 .qna {
     position: fixed;
-    inset: auto 15px 85px auto;
+    inset: auto 13px 75px auto;
 }
 
 .qna img {
@@ -371,7 +416,7 @@ nav>ul>li ul::before {
 
 .toTop {
     position: fixed;
-    inset: auto 30px 30px auto;
+    inset: auto 25px 25px auto;
 }
 
 .toTop i {
@@ -382,4 +427,8 @@ nav>ul>li ul::before {
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.toTop i:hover {
+    background: #f4cac1;
 }

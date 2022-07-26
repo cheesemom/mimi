@@ -5,4 +5,9 @@ $(function () {
     });
 
 
+    AOS.init();
+
+
+
+
 })
