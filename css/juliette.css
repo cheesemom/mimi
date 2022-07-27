@@ -13,6 +13,21 @@
     width: 180px;
 }
 
+.menu01 {
+    width: 300px;
+    padding-left: 86px;
+}
+
+.menu02 {
+    width: 300px;
+    padding-right: 16px
+}
+
+
+
+
+
+
 .header .container nav {
     display: flex;
     justify-content: space-between;
@@ -52,8 +67,10 @@
     border-radius: 6px;
     top: 70%;
     left: 50%;
-    margin-left: -100px;
-    animation: motion 1s linear infinite alternate;
+    transform: translateX(-50%);
+    /* left말고 transform으로 움직여보기  */
+    line-height: 40px;
+    animation: motion 0.6s linear infinite alternate;
 }
 
 @keyframes motion {
@@ -62,7 +79,7 @@
     }
 
     100% {
-        margin-top: 3px;
+        margin-top: 2px;
     }
 }
 
@@ -76,6 +93,23 @@
     border-style: solid;
     border-color: transparent transparent #333 transparent;
 }
+
+
+#scroll_menu.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: top 0.5s;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -220,11 +254,16 @@ nav>ul>li ul li {
 
 .main_visual02 .new02 {
     display: flex;
-    gap: 30px;
+
     margin: 0 auto;
     width: 1400px;
     line-height: 1.5;
     letter-spacing: 1px;
+
+}
+
+.main_visual02 .new02 figure {
+    margin: 0 15px;
 }
 
 .main_visual02 h1 {
