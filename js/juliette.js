@@ -6,26 +6,20 @@ $(function () {
 
 
 
-
-
     $('.new02').slick({
         arrows: false,
         autoplay: true,
         pauseOnHover: false,
         pauseOnFocus: false,
         autoplaySpeed: 0,
-        speed: 3000,
+        speed: 4000,
         slidesToShow: 4,
         cssEase: "linear",
     });
 
 
 
-
-
     AOS.init();
-
-
 
 
 
@@ -37,7 +31,7 @@ $(function () {
         } else {
             $('#scroll_menu').removeClass("fixed");
         }
-    })
+    });
 
 
 
