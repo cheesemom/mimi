@@ -12,9 +12,18 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,
         autoplaySpeed: 0,
-        speed: 4000,
+        speed: 3000,
         slidesToShow: 4,
         cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true,
+
+                }
+            }],
     });
 
 
@@ -32,6 +41,31 @@ $(function () {
             $('#scroll_menu').removeClass("fixed");
         }
     });
+
+
+
+    $('.slide02').slick({
+        arrows: false,
+        autoplay: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        autoplaySpeed: 0,
+        speed: 3000,
+        slidesToShow: 4,
+        cssEase: "linear",
+        responsive: [
+            {
+                arrows: false,
+                autoplay: true,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                autoplaySpeed: 0,
+                speed: 5000,
+                slidesToShow: 4,
+                cssEase: "linear",
+            }],
+    });
+
 
 
 
