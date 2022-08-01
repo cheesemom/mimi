@@ -80,7 +80,7 @@
     text-align: center;
 }
 
-.main_visual02 h1 {
+.main_visual02 h2 {
     display: inline-block;
     font-size: 12px;
     border: 2px solid skyblue;
@@ -207,7 +207,7 @@
     justify-content: center;
 }
 
-.main_visual05 h1 {
+.main_visual05 h2 {
     display: inline-block;
     font-size: 12px;
     border: 2px solid skyblue;
@@ -271,7 +271,7 @@
 
 }
 
-.main_visual06 h1 {
+.main_visual06 h2 {
     display: inline-block;
     font-size: 12px;
     border: 2px solid skyblue;

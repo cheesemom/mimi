@@ -1,0 +1,71 @@
+/* header */
+
+.header {
+    position: absolute;
+    line-height: 100px;
+    z-index: 1;
+    border-bottom: 1px solid #fff;
+}
+
+.header .menu1st h1 {
+    width: 120px;
+    margin: 0 auto;
+}
+
+
+.header .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #fff;
+    gap: 50px;
+}
+
+
+
+/* menu 1st */
+
+.header .menu1st {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+/* menu 2nd */
+
+.header .menu2nd nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    line-height: 60px;
+    border-bottom: 1px solid #e5e2e0;
+}
+
+.header .container .mainMenu {
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.header .container .service {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+
+
+/* main */
+
+.main_slider {
+    position: relative;
+}
