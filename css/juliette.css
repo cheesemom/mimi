@@ -888,15 +888,11 @@ nav>ul>li ul li {
         line-height: 2;
     }
 
-    #footer .left {
+    #footer .left,
+    #footer .right {
         float: left;
     }
 
-
-    /* 안보임 */
-    #footer .right {
-        float: right;
-    }
 
     #footer .service {
         display: flex;
