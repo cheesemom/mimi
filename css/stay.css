@@ -64,8 +64,133 @@
 
 
 
-/* main */
+/* section01 */
 
-.main_slider {
-    position: relative;
+.mainSpace {
+    padding: 100px 0;
+}
+
+
+
+/* 첫번째 룸 */
+
+.MijasRight h2 {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.MijasRight p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    color: #808080;
+    letter-spacing: 0.5px;
+}
+
+.MijasImg {
+    display: flex;
+    padding: 100px 0;
+}
+
+
+
+
+/* 두번째 룸 */
+
+.PalmaLeft h2 {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.PalmaLeft p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    color: #808080;
+    letter-spacing: 0.5px;
+}
+
+.PalmaImg {
+    display: flex;
+    padding: 100px 0;
+}
+
+
+
+
+
+
+
+/* notice */
+
+.notice {
+    color: #9b9a99;
+    font-weight: 300;
+    padding: 100px 0 100px 0;
+}
+
+.notice strong {
+    color: #424242;
+    font-weight: 500;
+}
+
+.notice p {
+    font-size: 13px;
+}
+
+.noticeheader {
+    margin-top: 30px;
+}
+
+.noticeword {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.line1 {
+    border-top: 1px solid #e5e7eb;
+    margin-bottom: 40px;
+}
+
+.line2 {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 40px;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    margin: 0 auto;
+    background: #a1936e;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .inner {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    padding: 50px 0 30px 0;
+}
+
+.footer img {
+    width: 80px;
+}
+
+.footer .info {
+    padding: 20px 0;
+}
+
+.footer span {
+    font-weight: 600;
 }
