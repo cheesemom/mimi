@@ -1,5 +1,9 @@
 $(function () {
 
+
+    AOS.init();
+
+
     $('.main_slider').slick({
         arrows: false,
         autoplay: true,
@@ -10,38 +14,22 @@ $(function () {
 
 
 
-    $('.Mijas_slider').slick({
-        arrows: false,
-        autoplay: true,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        autoplaySpeed: 4000,
-        dots: true,
+    $('.bxSlider').bxSlider({
+        slideWidth: 600,
+        auto: true,
+        autoControls: true,
+        stopAutoOnclick: true,
+        autoplaySpeed: 2000,
     });
 
 
 
-    $('.Palma_slider').slick({
-        arrows: false,
-        autoplay: true,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        autoplaySpeed: 4000,
-        dots: true,
+    $('.bxSlider2').bxSlider({
+        slideWidth: 600,
+        auto: true,
+        autoControls: true,
+        stopAutoOnclick: true,
+        autoplaySpeed: 2000,
     });
-
-
-
-
-
-
-
-
-
-
-
-    AOS.init();
-
-
 
 })
