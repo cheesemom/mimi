@@ -8,17 +8,15 @@ body {
 
 
 /* header */
-
 .header {
     position: absolute;
+    width: 100%;
     line-height: 100px;
     z-index: 1;
     border-bottom: 1px solid #fff;
 }
 
 .header .container {
-    width: 100%;
-    /* width 100%로 해도 라인줄이 꽉안참 */
     margin: 0 auto;
     color: #fff;
 }
@@ -40,7 +38,7 @@ body {
 .header .container .service {
     display: flex;
     gap: 15px;
-    font-size: 28px;
+    font-size: 26px;
     justify-content: flex-end;
     line-height: 1.5;
 }
@@ -55,7 +53,7 @@ body {
 .header .container .mainMenu {
     display: flex;
     gap: 40px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 200;
 }
 
@@ -63,7 +61,6 @@ body {
 
 
 /* Main */
-
 .main_visual .main_slider figure {
     height: 100vh;
 }
@@ -72,20 +69,19 @@ body {
 
 
 /* Section01 */
+.mainSpace {
+    padding: 100px 0;
+}
 
 .Mijas {
     display: flex;
-    padding: 100px 0;
-    margin: 0 auto;
-    width: 1200px;
-}
-
-.bxSlider {
-    float: left;
+    padding: 50px 0;
+    width: 100%;
+    justify-content: center;
 }
 
 .MijasRight {
-    margin: 0 50px 0 50px;
+    margin: 0 0 0 50px;
 }
 
 .MijasRight h2 {
@@ -108,13 +104,14 @@ body {
 
 .MijasImg1 {
     display: flex;
-    padding: 0 150px 5px 150px;
+    justify-content: center;
     gap: 5px;
+    margin-bottom: 5px;
 }
 
 .MijasImg2 {
     display: flex;
-    padding: 0 150px 50px 150px;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -122,20 +119,15 @@ body {
 
 
 /* Section02 */
-
 .Palma {
     display: flex;
-    padding: 100px 0;
-    margin: 0 auto;
-    width: 1200px
-}
-
-.bxSlider {
-    float: left;
+    padding: 50px 0;
+    width: 100%;
+    justify-content: center;
 }
 
 .PalmaLeft {
-    margin: 0 50px 0 50px;
+    margin: 0 50px 0 0;
 }
 
 .PalmaLeft h2 {
@@ -158,13 +150,14 @@ body {
 
 .PalmaImg1 {
     display: flex;
-    padding: 0 150px 5px 150px;
+    justify-content: center;
     gap: 5px;
+    margin-bottom: 5px;
 }
 
 .PalmaImg2 {
     display: flex;
-    padding: 0 150px 0 150px;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -172,7 +165,6 @@ body {
 
 
 /* Notice */
-
 .notice {
     font-weight: 300;
     padding: 100px 0 100px 0;
@@ -211,62 +203,53 @@ body {
 
 
 /* Section03 */
-
-.tap_menu {
+.tab_menu {
     display: flex;
     text-align: center;
     font-size: 14px;
 }
 
-.tap_menu>li {
+.tab_menu>div {
     flex: 1;
 }
 
-.tap_menu>li>a {
+.tab_menu>div>a {
     display: block;
     line-height: 40px;
     padding: 0 15px;
     background: #f7f7f7;
 }
 
-.tab_menu>li.on a {
-    background: #333;
-    color: #f00;
-}
-
-.tab_menu>li~li {
-    border-left: 1px solid #fff;
+.tab_menu>div~div {
+    border-left: 1px solid #e5e7eb;
 }
 
 .tab_content {
     position: relative;
 }
 
-.tab_content>li {
-    position: absolute;
-    inset: 0 0 0 0;
+.tab_content>div {
+    overflow: hidden;
+    height: 0;
     visibility: hidden;
-    padding: 10px 0;
 }
 
-.tab_content>li.on {
+.tab_content>div.on {
     visibility: visible;
+    height: auto;
+    overflow: visible;
 }
 
-/* 전체적으로 적용x */
-
-
-.tap {
+.tab {
     width: 1200px;
-    padding: 0 100px 0 100px;
+    justify-content: center;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
-
 
 
 
 /* Footer */
-
 .footer {
     margin: 0 auto;
     background: #a1936e;

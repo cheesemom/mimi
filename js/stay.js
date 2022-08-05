@@ -23,12 +23,12 @@ $(function () {
     });
 
 
-    $('.tap_menu>li>a').on('click', function (e) {
+    $('.tab_menu>div>a').on('click', function (e) {
         e.preventDefault();
         var idx = $(this).parent().index();
-        $('.tab_content>li').removeClass('on')
-        $('.tab_content>li').eq(idx).addClass('on');
-        $('.tap_menu>li').removeClass('on')
+        $('.tab_content>div').removeClass('on')
+        $('.tab_content>div').eq(idx).addClass('on');
+        $('.tap_menu>div').removeClass('on')
         $(this).parent().addClass('on');
     });
 
