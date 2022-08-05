@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
 /* header */
 
 .header {
@@ -7,65 +16,53 @@
     border-bottom: 1px solid #fff;
 }
 
-.header .menu1st h1 {
-    width: 120px;
-    margin: 0 auto;
-}
-
 .header .container {
-    display: flex;
-    width: 1200px;
+    width: 100%;
+    /* width 100%로 해도 라인줄이 꽉안참 */
     margin: 0 auto;
+    color: #fff;
 }
 
 .header .container nav {
     display: flex;
-    justify-content: center;
     margin: 0 auto;
-    color: #fff;
     gap: 50px;
+    border-top: 1px solid #fff;
 }
 
-
-
-
-/* menu 1st */
-
-.header .menu1st {
+.header .menu1st h1 {
+    width: 110px;
+    margin: 10px auto;
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-
-
-
-/* menu 2nd */
-
-.header .menu2nd nav {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    line-height: 60px;
-    border-bottom: 1px solid #e5e2e0;
-}
-
-.header .container .mainMenu {
-    display: flex;
-    gap: 30px;
-    font-size: 15px;
-    font-weight: 200;
+    margin-top: 20px;
 }
 
 .header .container .service {
     display: flex;
     gap: 15px;
-    font-size: 20px;
+    font-size: 28px;
+    justify-content: flex-end;
+    line-height: 1.5;
+}
+
+.header .menu2nd nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.header .container .mainMenu {
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 200;
 }
 
 
 
-/* section01 */
+
+/* Main */
 
 .main_visual .main_slider figure {
     height: 100vh;
@@ -74,11 +71,13 @@
 
 
 
-/* 첫번째 룸 */
+/* Section01 */
 
 .Mijas {
     display: flex;
     padding: 100px 0;
+    margin: 0 auto;
+    width: 1200px;
 }
 
 .bxSlider {
@@ -86,99 +85,103 @@
 }
 
 .MijasRight {
-    border: 1px solid #f4cac1;
-    float: left;
+    margin: 0 50px 0 50px;
 }
 
 .MijasRight h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     text-align: center;
+    letter-spacing: 1px;
     margin-bottom: 40px;
     margin-top: 60px;
 }
 
 .MijasRight p {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 2.5;
     text-align: center;
-    color: #808080;
+    color: #404040;
     letter-spacing: 0.5px;
 }
 
 .MijasImg1 {
     display: flex;
+    padding: 0 150px 5px 150px;
     gap: 5px;
 }
 
 .MijasImg2 {
     display: flex;
+    padding: 0 150px 50px 150px;
     gap: 5px;
 }
 
 
 
 
-/* 두번째 룸 */
+/* Section02 */
 
 .Palma {
     display: flex;
     padding: 100px 0;
+    margin: 0 auto;
+    width: 1200px
 }
 
-.bxSlider2 {
+.bxSlider {
     float: left;
-    margin-left: 100px;
 }
 
 .PalmaLeft {
-    border: 1px solid #f4cac1;
-    float: left;
+    margin: 0 50px 0 50px;
 }
 
 .PalmaLeft h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     text-align: center;
+    letter-spacing: 1px;
     margin-bottom: 40px;
     margin-top: 60px;
 }
 
 .PalmaLeft p {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 2.5;
     text-align: center;
-    color: #808080;
+    color: #404040;
     letter-spacing: 0.5px;
 }
 
 .PalmaImg1 {
     display: flex;
+    padding: 0 150px 5px 150px;
     gap: 5px;
 }
 
 .PalmaImg2 {
     display: flex;
+    padding: 0 150px 0 150px;
     gap: 5px;
 }
 
 
 
 
-
-/* notice */
+/* Notice */
 
 .notice {
-    color: #9b9a99;
     font-weight: 300;
     padding: 100px 0 100px 0;
+    letter-spacing: 0.5px;
 }
 
 .notice strong {
-    color: #424242;
-    font-weight: 500;
+    color: #404040;
+    font-weight: 700;
 }
 
 .notice p {
@@ -202,6 +205,61 @@
 .line2 {
     border-top: 1px solid #e5e7eb;
     margin-top: 40px;
+}
+
+
+
+
+/* Section03 */
+
+.tap_menu {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tap_menu>li {
+    flex: 1;
+}
+
+.tap_menu>li>a {
+    display: block;
+    line-height: 40px;
+    padding: 0 15px;
+    background: #f7f7f7;
+}
+
+.tab_menu>li.on a {
+    background: #333;
+    color: #f00;
+}
+
+.tab_menu>li~li {
+    border-left: 1px solid #fff;
+}
+
+.tab_content {
+    position: relative;
+}
+
+.tab_content>li {
+    position: absolute;
+    inset: 0 0 0 0;
+    visibility: hidden;
+    padding: 10px 0;
+}
+
+.tab_content>li.on {
+    visibility: visible;
+}
+
+/* 전체적으로 적용x */
+
+
+.tap {
+    width: 1200px;
+    padding: 0 100px 0 100px;
+    margin: 0 auto;
 }
 
 
