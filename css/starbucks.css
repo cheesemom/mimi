@@ -49,6 +49,15 @@
     transform: translateY(-50%);
 }
 
+.header .search {
+    font-size: 17px;
+}
+
+.header .search:hover {
+    color: #fff;
+    background: #333;
+    border-radius: 50%;
+}
 
 .header .container {
     justify-content: space-between;
@@ -58,6 +67,11 @@
     line-height: 100px;
 }
 
+.header h1 img {
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
 .header nav ul {
     display: flex;
     gap: 40px;
@@ -65,19 +79,94 @@
     font-weight: 400;
 }
 
+.header .bb>li:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.header nav>ul>li:hover {
+    color: #669900;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
 
 
 
 /* Main */
-.main_visual img {
-    width: 100%;
-    height: 650px;
+.main_visual_wrap {
+    height: 646px;
+    background: #87C9E2;
+}
+
+.main_visual_wrap .main_visual_inner {
+    max-width: 1130px;
+}
+
+.main_visual_inner {
     position: relative;
+    box-sizing: border-box;
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
 }
 
+.main_visual_slogan {
+    top: 31%;
+}
 
-.main_left img {
+.main_visual_slogan,
+.btn_slogan {
     position: absolute;
+    width: 282px;
+    left: -7.8%;
+}
+
+.btn_slogan {
+    text-align: center;
+    z-index: 10;
+    height: 38px;
+    justify-content: center;
+    bottom: 36%;
+}
+
+.btn_slogan a {
+    display: inline-block;
+    margin: 40px 0 0 0;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 9px 6px 9px;
+    width: 120px;
+    height: 40px;
+}
+
+.btn_slogan a:hover {
+    background: #fff;
+    color: #87C9E2;
+    justify-content: center;
+}
+
+.main_visual_set {
+    justify-content: flex-end;
+    height: 100%;
+    display: flex;
+}
+
+
+.main_visual_set .set01 {
+    transform: translate(30%, 10%);
+}
+
+.main_visual_set .set02 {
+    transform: translate(10%, 22%);
+}
+
+
+.main_visual_set .set03 {
+    transform: translate(10%, 10%);
 }
 
 
@@ -85,7 +174,11 @@
 
 
 
-/* Section01 */
+
+
+
+
+/* Section01 prom banner*/
 
 
 /* Section02 */
