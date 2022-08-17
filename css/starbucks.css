@@ -214,7 +214,7 @@
 
 
 
-/* Section01 prom banner*/
+/* top prom banner*/
 
 
 
@@ -344,6 +344,7 @@
 
 /* season promotion banner */
 .main_bean_wrap {
+    position: relative;
     width: 100%;
     height: 500px;
     background: url("../img/starbucks/m03.back.jpg");
@@ -352,34 +353,17 @@
 
 .main_bean_inner {
     margin: 0 auto;
-    width: 1124px;
+    position: relative;
     height: 400px;
-    display: flex;
-    padding-top: 40px;
-    justify-content: space-between;
 }
 
 .bean_img_box {
-    float: left;
+    position: absolute;
+    /* float: left;
     width: 16.3%;
     margin-left: 40px;
     margin-right: 40px;
-    text-align: center;
-}
-
-.bean_txt_box h3 {
-    font-size: 30px;
-    font-weight: 500;
-    margin: 8px 0 10px 0;
-    letter-spacing: 0.5px;
-}
-
-.bean_txt_box p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
-    opacity: 0.7;
+    text-align: center; */
 }
 
 .btn_bean_detail a {
@@ -407,7 +391,6 @@
 
 
 /* main promotion banner */
-
 .reserve_wrap {
     position: relative;
     width: 100%;
@@ -421,7 +404,7 @@
     margin: 0 auto
 }
 
-.reserve_title {
+.reserve_wrap .reserve_title {
     padding-top: 115px;
     max-width: 1080px;
     width: 100%;
@@ -429,28 +412,28 @@
     margin-right: auto;
 }
 
-.reserve_visual {
+.reserve_wrap .reserve_visual {
     display: block;
     position: absolute;
     right: 0%;
     bottom: 0;
 }
 
-.reserve_visual::before {
+.reserve_wrap .reserve_visual::before {
     content: url("../img/starbucks/m04_back3.png");
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -0.5%;
 }
 
-.reserve_visual::after {
+.reserve_wrap .reserve_visual::after {
     content: url("../img/starbucks/m04_back4.png");
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -0.5%;
 }
 
-.reserve_detail_btn_wrap {
+.reserve_wrap .reserve_detail_btn_wrap {
     position: relative;
     z-index: 10;
     max-width: 1080px;
@@ -461,7 +444,7 @@
     box-sizing: border-box;
 }
 
-.reserve_detail_btn a {
+.reserve_wrap .reserve_detail_btn a {
     display: block;
     font-size: 15px;
     border: 2px solid #B9813E;
@@ -474,7 +457,7 @@
     line-height: 34px;
 }
 
-.reserve_detail_btn a:hover {
+.reserve_wrap .reserve_detail_btn a:hover {
     color: #fff;
     background: #B9813E;
     text-decoration: underline;
@@ -484,8 +467,266 @@
 
 
 /*  main reserve banner */
+.favWrap {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: url("../img/starbucks/m05.back.jpg");
+    color: #fff;
+}
+
+.favWrap .wrap_inner {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fav_prod_txt01 {
+    background: url("../img/starbucks/m05.txt1.png");
+    height: 204px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -20000px;
+    top: 120px;
+    width: 258px;
+    z-index: 7;
+}
+
+.fav_prod_txt02 {
+    background: url("../img/starbucks/m05.txt2.png") no-repeat;
+    height: 156px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -20000px;
+    top: 370px;
+    width: 362px;
+    z-index: 7;
+}
+
+.fav_img {
+    background: url("../img/starbucks/m05.Img.png") no-repeat center;
+    top: 100px;
+    right: -10px;
+    width: 672px;
+    height: 458px;
+}
+
+
+.btn_fav_prod a {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 11px 16px 11px 16px;
+    width: 125px;
+    height: 38px;
+
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    line-height: 13px;
+
+    position: absolute;
+    left: 328px;
+    top: 570px;
+    z-index: 7;
+}
+
+.btn_fav_prod a:hover {
+    background: #fff;
+    color: #333;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
+
+
+/* main store */
+.reserve_magazine_wrap {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url("../img/starbucks/m06_back.png") no-repeat 50% 100%;
+}
+
+.reserve_magazine_wrap .reserve_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.reserve_magazine_wrap .reserve_title {
+    position: relative;
+    z-index: 10;
+    padding-top: 135px;
+    padding-left: 55px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.reserve_magazine_wrap .reserve_visual {
+    display: block;
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    right: 50%;
+    margin-right: -483px;
+}
+
+.reserve_magazine_wrap .reserve_detail-btn_wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 1100px;
+    margin: 10px 80px auto auto;
+    box-sizing: border-box;
+}
+
+.reserve_magazine_wrap .reserve_detail_btn a {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #333;
+    padding: 11px 16px 11px 16px;
+    width: 125px;
+    height: 38px;
+    margin: 30px 0 0 0;
+    line-height: 13px;
+}
+
+.reserve_magazine_wrap .reserve_detail_btn a:hover {
+    background: #333;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
+
+
+/* store */
+.storeWrap {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url("../img/starbucks/m07_back.jpg");
+    overflow: hidden;
+}
+
+.store_exp_img01 {
+    background: url("../img/starbucks/m07.img1.png") no-repeat;
+    height: 228px;
+    left: 390px;
+    position: absolute;
+    top: 149px;
+    width: 228px;
+    z-index: 5;
+}
+
+.store_exp_img02 {
+    background: url("../img/starbucks/m07.img2.png") no-repeat;
+    height: 312px;
+    left: 160px;
+    position: absolute;
+    top: 0;
+    width: 366px;
+    z-index: 4;
+}
+
+.store_exp_img03 {
+    background: url("../img/starbucks/m07.img3.png") no-repeat;
+    height: 142px;
+    left: 520px;
+    position: absolute;
+    top: -60px;
+    width: 343px;
+    z-index: 4;
+}
+
+.store_exp_img04 {
+    background: url("../img/starbucks/m07.img4.png") no-repeat;
+    height: 102px;
+    position: absolute;
+    right: 30px;
+    top: 298px;
+    width: 230px;
+    z-index: 4;
+}
+
+
+.store_txt01 {
+    background: url("../img/starbucks/m07_txt1.png") no-repeat;
+    height: 54px;
+    position: absolute;
+    overflow: hidden;
+    text-indent: -20000px;
+    top: 100px;
+    width: 385px;
+    z-index: 4;
+}
+
+.store_txt02 {
+    background: url("../img/starbucks/m07_txt2.png") no-repeat;
+    height: 61px;
+    position: absolute;
+    right: 168px;
+    overflow: hidden;
+    text-indent: -20000px;
+    top: 168px;
+    width: 366px;
+    z-index: 4;
+}
+
+.store_btn a {
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 125px;
+    height: 38px;
+    line-height: 13px;
+
+    position: absolute;
+    z-index: 4;
+    right: 402px;
+    top: 258px;
+
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    color: #333;
+    margin: 30px 0 0 0;
+    padding: 11px 16px 11px 16px;
+}
+
+.store_btn a:hover {
+    background: #333;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+}
 
 
 
 
 /* Footer */
+.footer {
+    background: #2C2A29;
+    color: #fff;
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer_wrap {
+    background: url("../img/starbucks/footer_logo.png") right 8px no-repeat;
+    display: inline-block;
+    left: 50%;
+    position: relative;
+}

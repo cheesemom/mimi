@@ -324,9 +324,6 @@
 
 
 
-
-
-
 #footer .left .info {
     padding-top: 30px;
 }
@@ -359,7 +356,6 @@
     text-underline-position: under;
     padding-right: 15px;
 }
-
 
 
 
@@ -404,7 +400,6 @@
 
 
 
-
 #footer .left {
     float: left;
 }
@@ -412,12 +407,6 @@
 #footer .right {
     float: right;
 }
-
-
-
-
-
-
 
 
 .Top {
@@ -432,7 +421,6 @@
     font-size: 30px;
     cursor: pointer;
 }
-
 
 .Top i:hover {
     color: skyblue;
