@@ -22,6 +22,20 @@ $(function () {
 
 
 
+    new Swiper('.main_visual04 .swiper', {
+        direction: 'horizontal',
+        autoplay: {
+            delay: 3000
+        },
+        loop: true,
+        slidesPerView: 1,
+
+    });
+
+
+
+
+
 
 
 })

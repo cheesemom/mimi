@@ -1,6 +1,4 @@
 /* topBanner */
-
-
 .topBanner {
     position: sticky;
     inset: 0 auto auto 0;
@@ -45,11 +43,7 @@
 
 
 
-
-
 /* header */
-
-
 .header {
     line-height: 100px;
 }
@@ -108,11 +102,7 @@
 
 
 
-
-
-/* 1page */
-
-
+/* Main */
 .main_visual01 {
     position: relative;
 }
@@ -174,11 +164,7 @@
 
 
 
-
-
 /* 2page */
-
-
 .main_visual02 {
     padding: 100px 0;
 }
@@ -230,11 +216,7 @@
 
 
 
-
-
 /* 3page */
-
-
 .main_visual03 {
     padding: 100px 0;
 }
@@ -286,11 +268,13 @@
 
 
 
-
-
 /* 4page */
-
-
 .main_visual04 {
     padding: 100px 0;
 }
+
+
+
+
+
+/* Footer */

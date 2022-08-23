@@ -13,7 +13,7 @@ $(function () {
             delay: 5000
         },
         loop: true,
-        slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
+        slidesPerView: 3,
         spaceBetween: 10, // 슬라이드 사이 여백
         centeredSlides: true, // 1번 슬라이드가 가운데 보이기
         pagination: { // 페이지 번호 사용
@@ -21,8 +21,8 @@ $(function () {
             clickable: true // 사용자의 페이지 번호 제어 여부
         },
         navigation: { // 슬라이드 이전/다음 버튼 사용
-            prevEl: '.promotion .swiper-button-prev', // 이전 버튼 요소
-            nextEl: '.promotion .swiper-button-next' // 다음 버튼 요소
+            prevEl: '.promotion .swiper-button-prev',
+            nextEl: '.promotion .swiper-button-next'
         }
     });
 
@@ -47,5 +47,21 @@ $(function () {
     thisYear.textContent = new Date().getFullYear();
 
 
+
+    // 토글
+    function toggleClass() {
+        $('.pop li').toggleClass('on');
+        $('.notice .popup').toggleClass('on');
+    }
+
+    $('.pop li').on('click', toggleClass);
+    $('.popup i').on('click', toggleClass);
+
+    function mopen() {
+        $(this).toggleClass('on');
+        $('.Gnb').toggleClass('on');
+    }
+
+    $('.mopen').on('click', mopen)
 
 })

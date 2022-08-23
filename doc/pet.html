@@ -8,12 +8,15 @@
     <title>pet</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="../css/pet.css">
 
 </head>
 
 <body>
     <div class="Wrap">
+        <!-- TopBanner -->
         <div class="topBanner">
             <div class="inner">
                 <p><span>MARLON SHOP</span> 앱 다운로드 할인쿠폰 즉시발급 !<a href="">GO</a>
@@ -22,6 +25,9 @@
             </div>
         </div>
 
+
+
+        <!-- Header -->
         <header class="header">
             <div class="container">
                 <nav>
@@ -55,62 +61,7 @@
 
 
 
-        <nav class="sidenav">
-            <div class="drilldown">
-                <div class="drilldown_container">
-                    <ul class="drilldown_root">
-                        <li style="margin-top: 110px;"><a href="#">SHOP</a></li>
-                    </ul>
-
-                    <ul class="drilldown_sub" style="float: left; width: 260px;">
-
-                    </ul>
-                </div>
-            </div>
-            <header>MENU<span>×</span></header>
-
-            <ol>
-                <li class="menu_item"><a href="#0">SHOP</a>
-                    <ol class="sub_menu">
-                        <li class="menu_item"><a href="#0">CAT</a></li>
-                        <li class="menu_item"><a href="#0">BRAND</a></li>
-                        <li class="menu_item"><a href="#0">BEST</a></li>
-                        <li class="menu_item"><a href="#0">NEW</a></li>
-                    </ol>
-                </li>
-
-                <li class="menu_item"><a href="#">BOARD</a>
-                    <ol class="sub_menu">
-                        <li class="menu_item"><a href="#0">NOTICE</a></li>
-                        <li class="menu_item"><a href="#0">Q&A</a></li>
-                        <li class="menu_item"><a href="#0">REVIEW</a></li>
-                    </ol>
-                </li>
-
-                <li class="menu_item"><a href="#0">ORDER</a></li>
-            </ol>
-
-
-
-            <ol class="menu02">
-                <li class="menu_item"><a href="#0">EN|KR</a></li>
-                <li class="menu_item"><a href="#0">Instagram</a></li>
-                <li class="menu_item"><a href="#0">Kakao 1:1</a></li>
-            </ol>
-
-            <ol class="menu03">
-                <li class="menu_item"><a href="#0">LOGIN</a></li>
-                <li class="menu_item"><a href="#0">JOIN</a></li>
-                <li class="menu_item"><a href="#0">MY PAGE</a></li>
-                <li class="menu_item"><a href="#0"><img src="../img/icon-bag.png" alt=""></a></li>
-                <li class="menu_item"><a href="#0"><img src="../img/icon-heart.png" alt=""></a></li>
-            </ol>
-
-        </nav>
-
-
-
-
+        <!-- Main -->
         <main>
             <section class="main_visual01">
                 <div class="main_slider">
@@ -153,14 +104,15 @@
                             </a>
                         </div>
                     </figure>
+
                 </div>
             </section>
 
 
+
             <section class="main_visual02">
                 <h1>NEW ARRIVALS</h1>
-
-                <div class="main02">
+                <div class="new arrivals">
                     <div class="new01">
 
                         <figure>
@@ -212,12 +164,9 @@
 
 
 
-
-
             <section class="main_visual03">
                 <h1>WEEKLY BEST</h1>
-
-                <div class="main03">
+                <div class="weekly best">
                     <div class="new02">
                         <figure>
                             <div class="image">
@@ -268,22 +217,69 @@
 
 
 
-
-
             <section class="main_visual04">
 
-                <div class="main04">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
 
+                        <div class="swiper-slide">
+                            <img src="../img/pet/cat_a01.gif" alt="">
+
+                            <img src="../img/pet/cat_new.png" alt="">
+                            <h2>MOV TRIANGLE (WHITE, BLUE)</h2>
+                            <a href="">
+                                <p>SHOP NOW</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="../img/pet/cat_a02.png" alt="">
+
+                            <img src="../img/pet/cat_new.png" alt="">
+                            <h2>NOIO DINING SET (CREAM)</h2>
+                            <a href="">
+                                <p>SHOP NOW</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="../img/pet/cat_a03.jpg" alt="">
+
+                            <img src="../img/pet/cat_best.png" alt="">
+                            <h2>WERT CAT SHELF</h2>
+                            <a href="">
+                                <p>SHOP NOW</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="../img/pet/cat_a04.png" alt="">
+
+                            <img src="../img/pet/cat_best.png" alt="">
+                            <h2>KIONEE ART SCRATCHER STAND (BEIGE)</h2>
+                            <a href="">
+                                <p>SHOP NOW</p>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
+
             </section>
 
         </main>
+
+
+
+        <!-- Footer -->
+        <Footer class="footer">
+        </Footer>
     </div>
-
-
 
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="../js/pet.js"></script>
 
 </body>
