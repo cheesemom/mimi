@@ -102,65 +102,149 @@
 
 
 
-/* Main */
-.main_visual01 {
+/* Mainvisual */
+
+.main_visual {
     position: relative;
 }
 
-.main_visual01 .main_slider figure {
+.swiper {
     position: relative;
-    height: 70vh;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
 }
 
-.main_visual01 .main_slider .main01 {
-    background: url(../img/pet/cat_a01.gif) no-repeat center center/cover;
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
 }
 
-.main_visual01 .main_slider .main02 {
-    background: url(../img/pet/cat_a02.png) no-repeat center center/cover;
+
+/* 메인 텍스트 */
+.txt_right {
+    position: absolute;
+    top: 220px;
+    right: 190px;
+    color: black;
+    font-weight: 300;
+    text-align: left;
+    min-width: 300px;
 }
 
-.main_visual01 .main_slider .main03 {
-    background: url(../img/pet/cat_a03.jpg) no-repeat center center/cover;
+.subT1 {
+    color: #888;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.main_visual01 .main_slider .main04 {
-    background: url(../img/pet/cat_a04.png) no-repeat center center/cover;
+.mainT {
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px 0 25px 0;
 }
 
-.main_visual01 .inner {
-    float: right;
-    margin-right: 20px;
+.subT2 {
+    color: #888;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.main_visual01 img {
-    margin: 20px 0 0 0;
-    width: 30px;
+
+/* 슬라이드 밑 버튼 ???????? */
+.main_visual .swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
 }
 
-.main_visual01 h2 {
-    font-size: 14px;
-    margin: 10px 0 0 0;
+.main_visual .swiper-pagination .swiper-pagination-bullet {
+    background-color: transparent;
+    background-image: url("../img/pet/btn02.png");
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
 }
 
-.main_visual01 p {
-    display: inline-block;
-    margin: 10px 0 0 0;
-    font-size: 11px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    padding: 7px 15px 7px 15px;
+.main_visual .swiper-pagination .swiper-pagination-bullet:last-child {
+    margin-right: 0;
 }
 
-.main_visual01 .main01 h2 {
+.main_visual .swiper-pagination .swiper-pagination-bullet-active {
+    background-image: url("../img/pet/btn01.png");
+}
+
+
+/* 양쪽 버튼 커스텀 */
+.main_visual .swiper-button-prev,
+.main_visual .swiper-button-next {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #007042;
+    border-radius: 50%;
+    top: 250px;
+    z-index: 1;
+    color: #007042;
+}
+
+.main_visual .swiper-button-prev {
+    left: 50%;
+    margin-left: -520px;
+}
+
+.main_visual .swiper-button-next {
+    right: 50%;
+    margin-right: -520px;
+}
+
+.main_visual .swiper-button-prev i {
+    transform: translate(-5%, -4%);
+}
+
+.main_visual .swiper-button-next i {
+    transform: translate(3%, -1%);
+}
+
+.main_visual .swiper-button-prev i,
+.main_visual .swiper-button-next i {
+    font-size: 30px;
+}
+
+.main_visual .swiper-button-prev:hover,
+.main_visual .swiper-button-next:hover {
+    background-color: #333;
     color: #fff;
-    font-weight: 200;
+    border: 2px solid #fff;
 }
 
-.main_visual01 .main01 p {
-    border: 1px solid #fff;
-    color: #fff;
+.main_visual .swiper-button-prev::after,
+.main_visual .swiper-button-next::after {
+    display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -269,11 +353,114 @@
 
 
 /* 4page */
-.main_visual04 {
+
+.inner {
+    width: 1280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.area_set {
     padding: 100px 0;
 }
 
+.area_set .title_bold {
+    position: relative;
+    padding-bottom: 70px;
+}
 
+.area_set .title_bold .name {
+    position: absolute;
+    font-size: 43px;
+    font-weight: 700;
+    left: 0px;
+}
+
+.main_left {
+    float: left;
+    width: 36.2%;
+    left: 50%;
+}
+
+.main_left img {
+    border: none;
+    vertical-align: top;
+}
+
+.main_right {
+    float: right;
+    width: 59%;
+    left: -50%;
+}
+
+.area_set .main_right {
+    padding: 0px 0px 55px 0px;
+}
+
+.area_set .main_right h2 {
+    padding: 0 0 15px;
+    line-height: 27px;
+    font-size: 22px;
+}
+
+.area_set .main_right .magic {
+    padding-bottom: 38px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.area_set .main_right .list_product .product_row {
+    width: 100%;
+    padding: 10px 0;
+    display: table;
+    border: 1px solid #EDEBE6;
+    border-width: 1px 0 1px 0;
+}
+
+.area_set .prod {
+    width: 22%;
+    float: left;
+}
+
+.area_set .main_right .desc {
+    font-size: 15px;
+    float: left;
+    padding-top: 5px;
+    padding-left: 40px;
+    width: 68%;
+    font-weight: 300;
+}
+
+.area_set .main_right .product_row .name {
+    padding-bottom: 6px;
+    font-size: 17px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.area_set .main_right .product_row .summ {
+    color: #767676;
+    padding-left: 10px;
+    padding-top: 7px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.area_set .list_product ul.price {
+    padding: 38px 0 0 10px;
+}
+
+.area_set .list_product .price li.sale {
+    padding-top: 0;
+}
+
+.area_set .list_product .price li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px !important;
+}
+
+.area_set .list_product {}
 
 
 
