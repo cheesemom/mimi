@@ -103,7 +103,6 @@
 
 
 /* Mainvisual */
-
 .main_visual {
     position: relative;
 }
@@ -130,7 +129,7 @@
 .txt_right {
     position: absolute;
     top: 220px;
-    right: 190px;
+    right: 20%;
     color: black;
     font-weight: 300;
     text-align: left;
@@ -157,7 +156,7 @@
 }
 
 
-/* 슬라이드 밑 버튼 ???????? */
+/* 슬라이드 밑 버튼 */
 .main_visual .swiper-pagination {
     position: absolute;
     bottom: 20px;
@@ -166,9 +165,9 @@
 
 .main_visual .swiper-pagination .swiper-pagination-bullet {
     background-color: transparent;
-    background-image: url("../img/pet/btn02.png");
+    background: #007042;
     width: 10px;
-    height: 10px;
+    height: 9px;
     margin-right: 5px;
 }
 
@@ -177,7 +176,7 @@
 }
 
 .main_visual .swiper-pagination .swiper-pagination-bullet-active {
-    background-image: url("../img/pet/btn01.png");
+    background-image: url("../img/pet/btn_slide.png");
 }
 
 
@@ -186,21 +185,21 @@
 .main_visual .swiper-button-next {
     width: 55px;
     height: 55px;
-    border: 2px solid #007042;
+    border: 2px solid #333;
     border-radius: 50%;
     top: 250px;
     z-index: 1;
-    color: #007042;
+    color: #333;
 }
 
 .main_visual .swiper-button-prev {
     left: 50%;
-    margin-left: -520px;
+    margin-left: -700px;
 }
 
 .main_visual .swiper-button-next {
     right: 50%;
-    margin-right: -520px;
+    margin-right: -700px;
 }
 
 .main_visual .swiper-button-prev i {
@@ -220,7 +219,7 @@
 .main_visual .swiper-button-next:hover {
     background-color: #333;
     color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid #333;
 }
 
 .main_visual .swiper-button-prev::after,
@@ -231,129 +230,41 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 2page */
-.main_visual02 {
+/* New */
+.New {
     padding: 100px 0;
-}
-
-.main_visual02 .new01 {
+    position: relative;
     display: flex;
-    gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
-    line-height: 1.5;
-    letter-spacing: 1px;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.4s;
 }
 
-.main_visual02 h1 {
+.new_inner {
+    width: 1280px;
+}
+
+.New h2 {
     font-size: 30px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.main_visual02 img {
-    border-radius: 10% 10% 10% 10%;
-    margin-bottom: 15px;
-}
-
-.main_visual02 p {
-    font-size: 11px;
-}
-
-.main_visual02 .bold {
-    font-weight: 600;
-}
-
-.main_visual02 .image {
+.New .swiper-slide {
     position: relative;
+    opacity: 0.2;
+    transition: opacity 1s;
 }
 
-.main_visual02 .image:hover .it {
-    display: block;
-    cursor: pointer;
-}
-
-.main_visual02 .it {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
+.New .swiper-slide-active {
+    opacity: 1;
 }
 
 
 
-/* 3page */
-.main_visual03 {
-    padding: 100px 0;
-}
 
-.main_visual03 .new02 {
-    display: flex;
-    gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-
-.main_visual03 h1 {
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.main_visual03 img {
-    border-radius: 10% 10% 10% 10%;
-    margin-bottom: 15px;
-}
-
-.main_visual03 p {
-    font-size: 11px;
-}
-
-.main_visual03 .bold {
-    font-weight: 600;
-}
-
-.main_visual03 .image {
-    position: relative;
-}
-
-.main_visual03 .image:hover .it {
-    display: block;
-    cursor: pointer;
-}
-
-.main_visual03 .it {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-
-
-/* 4page */
-
+/* Cat & Dog */
 .inner {
     width: 1280px;
     box-sizing: border-box;
@@ -409,6 +320,8 @@
     font-size: 14px;
 }
 
+
+/* Cat & Dog 제품소개 */
 .area_set .main_right .list_product .product_row {
     width: 100%;
     padding: 10px 0;
@@ -460,8 +373,180 @@
     font-size: 14px !important;
 }
 
-.area_set .list_product {}
+
+/* cat 제품종류 */
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    margin: 30px 0;
+}
+
+.title .big {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.title .thin {
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.cat_inner {
+    display: flex;
+    width: 1280px;
+    gap: 30px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.cat_inner img {
+    margin-bottom: 10px;
+}
+
+.cat_inner .name {
+    margin-bottom: 10px;
+}
+
+.cat_inner .bold {
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.cat_inner .image {
+    position: relative;
+}
+
+.cat_inner .wish {
+    position: absolute;
+    right: 9px;
+    top: 11px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.cat_inner .wish img {
+    width: 25px;
+}
+
+.cat_inner .image:hover .it {
+    display: block;
+    cursor: pointer;
+}
+
+.cat_inner .it {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.cat_inner .prod1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 60px 0;
+}
+
+.cat_inner .prod2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 60px 0;
+}
+
+
+/* dog 제품종류 */
+.dog_inner {
+    display: flex;
+    width: 1280px;
+    gap: 30px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.dog_inner img {
+    margin-bottom: 10px;
+}
+
+.dog_inner .name {
+    margin-bottom: 10px;
+}
+
+.dog_inner .bold {
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.dog_inner .image {
+    position: relative;
+}
+
+.dog_inner .wish {
+    position: absolute;
+    right: 9px;
+    top: 11px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dog_inner .wish img {
+    width: 25px;
+}
+
+.dog_inner .image:hover .it {
+    display: block;
+    cursor: pointer;
+}
+
+.dog_inner .it {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.dog_inner .prod1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 60px 0;
+}
+
+.dog_inner .prod2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 60px 0;
+}
+
 
 
 
 /* Footer */
+.footer {
+    padding: 100px 0;
+    margin: 150px auto 30px;
+    width: 1280px;
+}
+
+.footer .inner {
+    overflow: hidden;
+    margin: 180px 0 50px;
+}
+
+.footer .block {
+    margin-bottom: 35px;
+}
+
+.footer .block .small {
+    color: #BEBEBE;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
