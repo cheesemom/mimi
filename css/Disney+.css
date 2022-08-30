@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1e0f21;
+    color: #fff;
+}
+
+
+
+/* header */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Disney+/S1_main.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* Main */
+.main_visual {
+    width: 100%;
+    height: 1000px;
+}
+
+.main_visual .fire {
+    top: 25.3125vw;
+    left: calc(52.65% - 65.98958333333333vw / 2);
+    width: 65.98958vw;
+    position: absolute;
+    z-index: 3;
+    height: auto;
+}
+
+.main_visual .logo img {
+    width: 180px;
+}
+
+.main_visual .logo {
+    position: absolute;
+    top: 25vh;
+    left: 10vh;
+}
+
+.main_visual .mention {
+    position: absolute;
+    top: 38vh;
+    left: 10vh;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.main_visual .price {
+    display: flex;
+}
+
+.main_visual .subscription strong {
+    top: 53vh;
+    left: 10vh;
+}
+
+.main_visual .discount strong {
+    top: 53vh;
+    left: 40vh;
+}
+
+.main_visual .subscription span {
+    top: 59vh;
+    left: 10vh;
+}
+
+.main_visual .discount span {
+    top: 59vh;
+    left: 40vh;
+}
+
+.main_visual .price strong {
+    position: absolute;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.main_visual .price span {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+
+
+
+.main_visual .introd {
+    position: absolute;
+    z-index: 9;
+    font-size: 50px;
+    top: 120vh;
+    text-align: center;
+    width: 100%;
+}
