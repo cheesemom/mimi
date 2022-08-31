@@ -32,20 +32,22 @@ header {
 }
 
 
+
 /* Main */
 .main_visual {
     width: 100%;
     height: 1000px;
 }
 
-.main_visual .fire {
+
+/* .main_visual .fire {
     top: 25.3125vw;
     left: calc(52.65% - 65.98958333333333vw / 2);
     width: 65.98958vw;
     position: absolute;
     z-index: 3;
     height: auto;
-}
+} */
 
 .main_visual .logo img {
     width: 180px;
@@ -55,53 +57,101 @@ header {
     position: absolute;
     top: 25vh;
     left: 10vh;
+    margin-bottom: 2vw;
+    width: 100%;
+    height: auto;
 }
 
-.main_visual .mention {
+.main_visual h1 {
     position: absolute;
     top: 38vh;
     left: 10vh;
-
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
+.main_visual .content .note {
+    position: absolute;
+    font-size: 11px;
+    opacity: 0.7;
+    top: 71vh;
+    left: 10vh;
+}
+
+
+/* grid_list 공통 */
 .main_visual .price {
     display: flex;
 }
 
-.main_visual .subscription strong {
-    top: 53vh;
-    left: 10vh;
-}
-
-.main_visual .discount strong {
-    top: 53vh;
-    left: 40vh;
-}
-
-.main_visual .subscription span {
-    top: 59vh;
-    left: 10vh;
-}
-
-.main_visual .discount span {
-    top: 59vh;
-    left: 40vh;
-}
-
-.main_visual .price strong {
+.main_visual .price h3 {
     position: absolute;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
 }
 
-.main_visual .price span {
+.main_visual .price .small {
     position: absolute;
     font-size: 15px;
     font-weight: 700;
     opacity: 0.7;
 }
+
+.main_visual .price a {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 13px 15px 13px 15px;
+    background: #016cf9;
+    color: #fff;
+    width: 270px;
+    height: 60px;
+    border-radius: 4px;
+}
+
+
+/* subscription */
+.main_visual .subscription h3 {
+    top: 53vh;
+    left: 10vh;
+}
+
+.main_visual .subscription .small {
+    top: 59vh;
+    left: 10vh;
+}
+
+.main_visual .subscription a {
+    top: 63vh;
+    left: 10vh;
+}
+
+
+/* discount */
+.main_visual .discount h3 {
+    top: 53vh;
+    left: 40vh;
+}
+
+.main_visual .discount .small {
+    top: 59vh;
+    left: 40vh;
+}
+
+.main_visual .discount a {
+    top: 63vh;
+    left: 40vh;
+}
+
+
+
+
 
 
 
