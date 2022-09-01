@@ -7,11 +7,25 @@
 body {
     background: #1e0f21;
     color: #fff;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.mini {
+    font-size: 17px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
 }
 
 
 
-/* header */
+/* Header */
 header {
     position: relative;
     width: 100%;
@@ -36,18 +50,8 @@ header {
 /* Main */
 .main_visual {
     width: 100%;
-    height: 1000px;
+    height: 100%;
 }
-
-
-/* .main_visual .fire {
-    top: 25.3125vw;
-    left: calc(52.65% - 65.98958333333333vw / 2);
-    width: 65.98958vw;
-    position: absolute;
-    z-index: 3;
-    height: auto;
-} */
 
 .main_visual .logo img {
     width: 180px;
@@ -69,10 +73,9 @@ header {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
-    width: 100%;
 }
 
-.main_visual .content .note {
+.main_visual .main_content .note {
     position: absolute;
     font-size: 11px;
     opacity: 0.7;
@@ -151,16 +154,158 @@ header {
 
 
 
-
-
-
-
-
-.main_visual .introd {
-    position: absolute;
-    z-index: 9;
-    font-size: 50px;
+/* Benefits */
+.Benefits {
+    padding: 100px 0;
     top: 120vh;
-    text-align: center;
+    text-align: left;
+    justify-content: center;
+    width: 1900px;
+}
+
+.Benefits .introd_box {
+    display: flex;
+    padding: 50px 0;
     width: 100%;
+    justify-content: center;
+}
+
+.Benefits .ad {
+    margin-left: 30px;
+}
+
+.Benefits .introd_box h4 {
+    font-size: 23px;
+    letter-spacing: 0.5px;
+    margin: 15px 0 20px 0
+}
+
+.Benefits .introd_box p {
+    font-size: 17px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* Movie */
+.moives {
+    padding: 100px 0;
+    justify-content: center;
+    width: 1900px;
+}
+
+.movie_introd {
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.movies h2 {}
+
+.movies p {}
+
+.movies .txt_left {
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 200px;
+    transform: translateY(250px);
+}
+
+.movies .image_right {
+    max-width: 50%;
+}
+
+
+
+
+/* 1st Grid, 2nd Grid */
+.grid {
+    padding: 100px 0;
+    width: 1900px;
+}
+
+.grid h2 {
+    text-align: center;
+}
+
+.grid p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid-container {
+    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-container li {
+    align-items: center;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.grid-container img {
+    width: 540px;
+    height: 320px;
+}
+
+
+
+/* Device */
+.Device {
+    padding: 100px 0;
+    width: 1900px;
+}
+
+.device_introd {
+    padding: 50px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.device h2 {
+    text-align: center;
+}
+
+.device p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid_watch {
+    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.grid_watch li {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.grid_watch img {
+    width: 400px;
+    height: 200px;
+}
+
+.grid_watch h3 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid_watch p {
+    font-size: 17px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+    text-align: center;
 }
