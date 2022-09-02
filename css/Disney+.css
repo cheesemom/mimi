@@ -5,16 +5,18 @@
 }
 
 body {
-    background: #1e0f21;
+    background: black;
     color: #fff;
     overflow-x: hidden;
 }
 
+h1,
 h2 {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom: 20px;
+    line-height: 50px;
 }
 
 .mini {
@@ -61,7 +63,7 @@ header {
     position: absolute;
     top: 25vh;
     left: 10vh;
-    margin-bottom: 2vw;
+    margin-bottom: 20px;
     width: 100%;
     height: auto;
 }
@@ -70,16 +72,14 @@ header {
     position: absolute;
     top: 38vh;
     left: 10vh;
-    font-size: 40px;
-    font-weight: 700;
     margin-bottom: 30px;
 }
 
 .main_visual .main_content .note {
     position: absolute;
-    font-size: 11px;
+    font-size: 12px;
     opacity: 0.7;
-    top: 71vh;
+    top: 69vh;
     left: 10vh;
 }
 
@@ -98,7 +98,6 @@ header {
 .main_visual .price .small {
     position: absolute;
     font-size: 15px;
-    font-weight: 700;
     opacity: 0.7;
 }
 
@@ -109,7 +108,6 @@ header {
     line-height: 2;
     text-align: center;
     text-decoration: none;
-
     padding: 13px 15px 13px 15px;
     background: #016cf9;
     color: #fff;
@@ -121,34 +119,34 @@ header {
 
 /* subscription */
 .main_visual .subscription h3 {
-    top: 53vh;
+    top: 51vh;
     left: 10vh;
 }
 
 .main_visual .subscription .small {
-    top: 59vh;
+    top: 56vh;
     left: 10vh;
 }
 
 .main_visual .subscription a {
-    top: 63vh;
+    top: 61vh;
     left: 10vh;
 }
 
 
 /* discount */
 .main_visual .discount h3 {
-    top: 53vh;
+    top: 51vh;
     left: 40vh;
 }
 
 .main_visual .discount .small {
-    top: 59vh;
+    top: 56vh;
     left: 40vh;
 }
 
 .main_visual .discount a {
-    top: 63vh;
+    top: 61vh;
     left: 40vh;
 }
 
@@ -156,34 +154,36 @@ header {
 
 /* Benefits */
 .Benefits {
-    padding: 100px 0;
+    padding: 150px 0;
     top: 120vh;
     text-align: left;
     justify-content: center;
     width: 1900px;
+
 }
 
-.Benefits .introd_box {
-    display: flex;
-    padding: 50px 0;
-    width: 100%;
-    justify-content: center;
-}
-
-.Benefits .ad {
-    margin-left: 30px;
-}
-
-.Benefits .introd_box h4 {
+.Benefits h4 {
     font-size: 23px;
     letter-spacing: 0.5px;
-    margin: 15px 0 20px 0
+    margin: 15px 0 20px 0;
 }
 
-.Benefits .introd_box p {
-    font-size: 17px;
-    opacity: 0.7;
-    letter-spacing: 0.5px;
+.Benefits p {
+    line-height: 1.5;
+}
+
+.Benefits .grid_introd {
+    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.Benefits .grid_introd li {
+    align-items: center;
+    box-sizing: border-box;
+    align-items: flex-start;
 }
 
 
@@ -195,15 +195,15 @@ header {
     width: 1900px;
 }
 
+.moives h2 {
+    line-height: 2;
+}
+
 .movie_introd {
     display: flex;
     padding: 50px 0;
     justify-content: center;
 }
-
-.movies h2 {}
-
-.movies p {}
 
 .movies .txt_left {
     max-width: 50%;
@@ -216,8 +216,6 @@ header {
 .movies .image_right {
     max-width: 50%;
 }
-
-
 
 
 /* 1st Grid, 2nd Grid */
@@ -308,4 +306,99 @@ header {
     letter-spacing: 0.5px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+
+
+/* Qna */
+.qna {
+    position: relative;
+    text-align: left;
+    padding: 150px 150px;
+}
+
+.qna h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.accordion {
+    background-color: #13151d;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    transition: 0.4s;
+    letter-spacing: 0.5px;
+}
+
+.active,
+.accordion:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.accordion:after {
+    content: '\002B';
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 50px;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.panel span {
+    text-decoration: underline;
+}
+
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    color: silver;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer img {
+    max-width: 80px;
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80px;
+}
+
+.footer .legal a {
+    margin-bottom: 20px;
+    display: inline-block;
+    color: silver;
+    text-decoration: none;
+    padding: 10px 12px;
+    white-space: nowrap;
+}
+
+.footer .info {
+    line-height: 22px;
+    margin-bottom: 30px;
 }
