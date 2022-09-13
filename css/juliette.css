@@ -1,6 +1,4 @@
 /* header */
-
-
 .header {
     line-height: 100px;
 }
@@ -82,8 +80,6 @@
     border-color: transparent transparent #333 transparent;
 }
 
-
-
 #scroll_menu.fixed {
     position: fixed;
     left: 0;
@@ -94,11 +90,7 @@
 
 
 
-
-
 /* 다단메뉴 */
-
-
 nav>ul>li>a {
     display: block;
     padding: 0 25px;
@@ -146,11 +138,7 @@ nav>ul>li ul li {
 
 
 
-
-
 /* main */
-
-
 .slide02 {
     display: block;
     background-color: #f4cac1;
@@ -166,11 +154,7 @@ nav>ul>li ul li {
 
 
 
-
-
 /* 1page */
-
-
 .main_visual01 .new01 {
     display: flex;
     gap: 30px;
@@ -224,11 +208,7 @@ nav>ul>li ul li {
 
 
 
-
-
 /* 2page */
-
-
 .main_visual02 .line01 {
     border-top: 1px solid #f4cac1;
     width: 1400px;
@@ -312,10 +292,7 @@ nav>ul>li ul li {
 
 
 
-
-
 /* 3page */
-
 .main_visual03 {
     padding: 50px 0;
 }
@@ -374,11 +351,7 @@ nav>ul>li ul li {
 
 
 
-
-
 /* footer */
-
-
 #footer {
     margin: 0 auto;
     background: #B7C5A1;
@@ -389,8 +362,6 @@ nav>ul>li ul li {
     position: relative;
     display: inline-block;
 }
-
-
 
 #footer .bottom {
     display: flex;
@@ -407,8 +378,6 @@ nav>ul>li ul li {
 #footer .left {
     float: left;
 }
-
-
 
 #footer .right {
     float: right;
@@ -433,8 +402,6 @@ nav>ul>li ul li {
 #footer .service .icon03:hover {
     color: #fff;
 }
-
-
 
 .qna {
     position: fixed;
@@ -466,17 +433,7 @@ nav>ul>li ul li {
 
 
 
-
-
-
-
-
-
-
-
 /* 반응형 */
-
-
 @media (max-width: 768px) {
 
     /* header */
