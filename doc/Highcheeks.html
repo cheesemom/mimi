@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>example 09 - Highcheeks</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/fullpage.css">
     <link rel="stylesheet" href="../css/Highcheeks.css">
 </head>
 
@@ -70,7 +69,7 @@
                             </ul>
                         </li>
                         <li><a href="">LOGIN</a></li>
-                        <li><a href=""><img src="../img/highcheeks/cart.png"> BAG</a></li>
+                        <li><a href=""><img src="../img/highcheeks/cart.png" alt=""> BAG</a></li>
                         <li class="icon"><a href=""><i class="xi-search"></i></a></li>
                     </ul>
 
@@ -81,22 +80,58 @@
 
 
         <!-- Main -->
-        <main>
-            <section class="main_visual">
-                <div class="main_slider">
-                    <figure><img src="../img/highcheeks/main01.jpg" alt=""></figure>
-                    <figure><img src="../img/highcheeks/main02.jpg" alt=""></figure>
-                    <figure><img src="../img/highcheeks/main03.jpg" alt=""></figure>
-                    <figure><img src="../img/highcheeks/main04.jpg" alt=""></figure>
-                    <figure><img src="../img/highcheeks/main05.jpg" alt=""></figure>
-                    <figure><img src="../img/highcheeks/main06.jpg" alt=""></figure>
+        <div id="fullpage">
+
+            <div class="section slide" style="width:100vw; height:100vh;">
+                <div class="slide"><img src="../img/highcheeks/main01.jpg" style="width:100vw; height: 100vh;">
                 </div>
-            </section>
+                <div class="slide"><img src="../img/highcheeks/main02.jpg" style="width:100vw; height: 100vh;">
+                </div>
+                <div class="slide"><img src="../img/highcheeks/main03.jpg" style="width:100vw; height: 100vh;">
+                </div>
+                <div class="slide"><img src="../img/highcheeks/main06.jpg" style="width:100vw; height: 100vh;">
+                </div>
+            </div>
 
 
 
-            <!-- section01 -->
-            <section class="mmmmm"></section>
+            <div class="section grid" style="background: #f2f2f2; width:100vw; height:100vh;">
+                <ul class="grid-container">
+                    <li class="grid-item"><img src="../img/highcheeks/prod01.jpg" alt="">
+                        <div class="caption">
+                            <p>Chou Chou Phonecase Silver</p>
+                        </div>
+                    </li>
+                    <li class="grid-item"><img src="../img/highcheeks/prod02.jpg" alt="">
+                        <div class="caption">
+                            <p>Chou Chou Phonecase Black</p>
+                        </div>
+                    </li>
+                    <li class="grid-item"><img src="../img/highcheeks/prod03.jpg" alt="">
+                        <div class="caption">
+                            <p>Chou Chou Phonecase Pink</p>
+                        </div>
+                    </li>
+                    <li class="grid-item"><img src="../img/highcheeks/prod04.jpg" alt="">
+                        <div class="caption">
+                            <p>Chou Chou Phonecase Butter</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="section footer" style="background: #fff; width:100vw; height:100vh;">
+
+
+
+
+            </div>
+
+
+
+        </div>
 
 
 
@@ -104,29 +139,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-        </main>
-
-
-
-        <footer></footer>
 
 
     </div>
 
     <script src="../js/jquery-1.12.4.min.js"></script>
-    <script src="../js/jquery.fullpage.min.js"></script>
-    <script src="../js/slick.min.js"></script>
+    <script src="../js/fullpage.js"></script>
     <script src="../js/Highcheeks.js"></script>
 
 </body>

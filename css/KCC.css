@@ -43,10 +43,7 @@
 
 
 
-
 /* 1page */
-
-
 .main_visual01 {
     position: relative;
 }
@@ -138,9 +135,7 @@
 
 
 
-
 /* 2page */
-
 .main_visual02 {
     background: #f1f1f1;
     padding: 200px 0;
@@ -195,9 +190,7 @@
 
 
 
-
 /* 3page */
-
 .main_visual03 {
     position: relative;
     box-sizing: border-box;
@@ -311,10 +304,7 @@
 
 
 
-
 /* 4page */
-
-
 .main_visual04 {
     background: url(../img/kcc/big-03.png) no-repeat center center/cover;
     color: #fff;
