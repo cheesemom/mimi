@@ -47,6 +47,10 @@ body {
     padding: 0 60px 0 110px;
 }
 
+.header h1 img {
+    width: 220px;
+}
+
 .header .container .country {
     display: flex;
     gap: 10px;
@@ -153,3 +157,81 @@ nav>ul>li ul li {
 
 
 /* Footer */
+.footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer .inner {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    display: flex;
+}
+
+.footer .logo img {
+    position: absolute;
+    width: 180px;
+    left: 100px;
+}
+
+.footer .customer,
+.footer .head,
+.footer .sns {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.footer .left .info,
+.footer .right .info,
+.footer .mid .info {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.footer .left .customer,
+.footer .mid .customer {
+    padding-bottom: 8px;
+}
+
+.footer .left .head,
+.footer .mid .head {
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.footer .right .sns {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer .right img {
+    width: 30px;
+}
+
+.footer .right .customer {
+    padding-bottom: 10px;
+}
+
+.footer .right .head {
+    padding-bottom: 10px;
+}
+
+.footer .same {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.footer .same span {
+    color: #808080;
+    font-weight: 300;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
