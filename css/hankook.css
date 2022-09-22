@@ -11,7 +11,7 @@
 
 .header .container {
     display: flex;
-    width: 1200px;
+    width: 1400px;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -29,6 +29,54 @@
     gap: 50px;
     font-size: 13px;
     font-weight: 600;
+}
+
+/* 다단메뉴 */
+nav>ul>li>a {
+    display: block;
+    padding: 0 30px;
+}
+
+nav>ul ul a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav>ul>li ul {
+    position: absolute;
+    inset: 90px auto auto 50%;
+    z-index: 999;
+    visibility: hidden;
+    width: 120%;
+    transform: translateX(-50%);
+    background: #fff;
+    opacity: 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+nav>ul>li:hover ul {
+    inset: 100px auto auto 50%;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+nav>ul>li>ul>li:hover {
+    background: #ddd;
+    color: #d3730d;
+    transition: 0.5s;
+}
+
+nav>ul>li ul li {
+    position: relative;
+    background: #fff;
 }
 
 
@@ -99,6 +147,17 @@
 
 
 /* MD's Pick */
+.MD {
+    padding: 100px 0;
+}
+
+.MD h3 {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 11px 5px 12px;
+    margin: 0 0 10px;
+    font-size: 1.0em;
+}
 
 
 
@@ -111,7 +170,7 @@
 
 .grid h2 {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
     margin-bottom: 50px;
 }
@@ -136,6 +195,7 @@
 
 
 
+
 /* Mid Visual */
 .mid {
     padding: 50px 0;
@@ -156,7 +216,7 @@
 
 .cs h2 {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
     margin-bottom: 50px;
 }
@@ -220,12 +280,12 @@
 }
 
 .con_txt .T a {
-    bottom: 77px;
+    bottom: 125px;
     left: 570px;
 }
 
 .con_txt .A a {
-    bottom: 77px;
+    bottom: 125px;
     right: 255px;
 }
 
@@ -274,7 +334,7 @@
 }
 
 .footer .bottom option {
-    color: #ababab;
+    color: silver;
     background: #333;
 }
 
@@ -282,7 +342,7 @@
     padding-top: 20px;
 }
 
-/* Top */
+/* Totop */
 .toTop {
     position: fixed;
     inset: auto 20px 20px auto;
