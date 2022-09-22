@@ -136,22 +136,161 @@
 
 
 
-/* Customer Service */
-
-
-
 /* Mid Visual */
+.mid {
+    padding: 50px 0;
+}
+
 .second img {
     width: 100%;
 }
 
 
-/* MD's Pick */
+
+/* Customer Service */
+.cs {
+    padding: 50px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cs h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
 
 
 
 /* Layer Grid */
+.layer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner {
+    position: relative;
+    padding: 0 0 50px 0;
+}
+
+.f_column,
+.s_column {
+    display: flex;
+}
+
+.f_column {
+    padding-bottom: 5px;
+}
+
+.f_column .cup {
+    padding-right: 5px;
+}
+
+.s_column .dish {
+    padding-right: 5px;
+}
+
+.con_txt .more a {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 20px;
+    width: 120px;
+    height: 50px;
+    line-height: 10px;
+    position: absolute;
+}
+
+.con_txt .more a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.con_txt .P a {
+    top: 78px;
+    left: 255px;
+}
+
+.con_txt .W a {
+    top: 78px;
+    right: 570px;
+}
+
+.con_txt .T a {
+    bottom: 77px;
+    left: 570px;
+}
+
+.con_txt .A a {
+    bottom: 77px;
+    right: 255px;
+}
 
 
 
 /* Footer */
+.footer {
+    width: 100%;
+    color: #333;
+    font-size: 11px;
+    background: #dddddd;
+    padding: 0 0 50px 100px;
+}
+
+.footer .inner {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    display: flex;
+}
+
+.footer .top {
+    line-height: 30px;
+    padding: 50px 200px 0 200px;
+}
+
+.footer .copyright {
+    background: #666;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .bottom {
+    padding: 50px 200px 0 200px;
+}
+
+.footer .bottom select {
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: none;
+}
+
+.footer .bottom option {
+    color: #ababab;
+    background: #333;
+}
+
+.bottom_logo {
+    padding-top: 20px;
+}
+
+/* Top */
+.toTop {
+    position: fixed;
+    inset: auto 20px 20px auto;
+}
+
+.toTop i {
+    padding: 10px;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
