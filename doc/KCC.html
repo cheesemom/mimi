@@ -8,6 +8,9 @@
     <title>example 01 - KCC</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/jquery.mb.YTPlayer.min.css">
+
+
     <link rel="stylesheet" href="../css/KCC.css">
 </head>
 
@@ -196,11 +199,69 @@
 
 
 
+            <!-- Recruit -->
+            <section class="recruit">
+                <div class="main02">
+                    <h2><span class="blue">K</span>nowledg, <span class="blue">C</span>hallenge,<span
+                            class="blue">C</span>ourage</h2>
+                    <p>지식과 용기, 그리고 도전정신으로 무장한 당신이라면 KCC의 한사람이 될 수 있습니다.</p>
+                    <a href="">자세히 보기</a>
+                </div>
+            </section>
+
+
+
+            <!-- News -->
+            <section class="news">
+                <h2><span class="blue">KCC</span> News</h2>
+                <p>KCC건설 소식지</p>
+
+                <div class="row">
+                    <div class="movie">
+                        <div class="play">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lPec2ERomC4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <table class="news_table">
+                        <thead>
+                            <tr>
+                                <th scope="cols">NEWS</th>
+                                <th scope="more" style="font-size: 11px;">+ more</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>내용이 KCC건설 ‘내일을 키워가는 집’ 영상 4,000만뷰 돌파</td>
+                                <th scope="row">2022-01-01</th>
+                            </tr>
+                            <tr>
+                                <td>한국건설경영협회 창립 30주년 기념 토론회 지상중계</td>
+                                <th scope="row">2022-01-01</th>
+                            </tr>
+                            <tr>
+                                <td>한국형 녹색분류체계의 건설기업 파급효과</td>
+                                <th scope="row">2022-01-01</th>
+                            </tr>
+                            <tr>
+                                <td>2022년 하반기 건설산업의 주요 이슈와 대응 방향</td>
+                                <th scope="row">2022-01-01</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+
+
             <!-- Creative -->
-            <section class="main_visual04">
-                <h2><a href="">CREATIVE</a></h2>
+            <section class="creative">
+                <h2><a href="">KCC Creative</a></h2>
                 <p>꿈과 현실의 한계를 넘는 건설 이상향을 만들어갑니다</p>
-                <em>서울 제로에너지 주택 실증단지</em>
             </section>
         </main>
 
@@ -208,24 +269,30 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <div class="top">
-                <div class="container">
-                    <dl>
-                        <dd><a href="">이용약관</a></dd>
-                        <dd><a href="https://www.kccworld.net/footer/privacy.do">개인정보처리방침</a></dd>
-                        <dd><a href="">Contact Us</a></dd>
-                        <dd><a href="">기성실적조회</a></dd>
-                        <dd><a href="">그리프 하우스 소개</a></dd>
-                    </dl>
-                </div>
-            </div>
+            <div class="inner">
 
-            <div class="bottom">
-                <div class="container">
-                    <div class="left">
-                        <address>서울시 서초구 강남대로 587 (잠원동 27-8) 대표전화 : 02-513-5500 </address>
-                        <p>COPYRIGHT(C) 2019 KCC ENGINEERING & CONSTRUCTION CO., LTD. ALL RIGHT RESERVED.</p>
+                <div class="left">
+                    <div class="raw">
+                        <dl>
+                            <dd><a href="">이용약관</a></dd>
+                            <dd><a href="">개인정보처리방침</a></dd>
+                            <dd><a href="">전자조달시스템</a></dd>
+                            <dd><a href="">기성실적조회</a></dd>
+                            <dd><a href="">Contact Us</a></dd>
+                        </dl>
                     </div>
+                    <div class="info">
+                        <div class="address">
+                            <span>서울시 서초구 강남대로 587 (잠원동 27-8) 대표전화 : 02-513-5500</span>
+                        </div>
+                        <p class="copyright">
+                            &copy; <span class="this-year"></span>
+                            KCC ENGINEERING & CONSTRUCTION CO., LTD. ALL RIGHT RESERVED.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="right">
                     <div class="family_link">
                         <select id="fl">
                             <option value="">family link</option>
@@ -236,6 +303,7 @@
                         </select>
                     </div>
                 </div>
+
             </div>
         </footer>
 
@@ -251,6 +319,8 @@
 
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.mb.YTPlayer.min.js"></script>
+
     <script src="../js/KCC.js"></script>
 </body>
 
